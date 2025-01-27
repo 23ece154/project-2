@@ -1,23 +1,3 @@
-// src/components/ProgressBar.jsx
-// import React from "react";
-
-// const ProgressBar = ({ currentTime, duration }) => {
-//   const progress = (currentTime / duration) * 100 || 0;
-
-//   return (
-//     <div style={{ width: "100%", background: "#ccc", height: "10px" }}>
-//       <div
-//         style={{
-//           width: `${progress}%`,
-//           background: "blue",
-//           height: "100%",
-//         }}
-//       ></div>
-//     </div>
-//   );
-// };
-
-// export default ProgressBar;
 
 
 import React from "react";

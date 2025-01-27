@@ -82,36 +82,15 @@ const SongPlayer = () => {
             {lyric.text}
           </p>
         ))}
+        <footer>
+  <audio ref={audioRef} src={song.songFile} controls />
+</footer>
+
       </div>
     </div>
+    
   );
 };
 
 export default SongPlayer;
-
-// import React from "react";
-// import { useLocation } from "react-router-dom";
-
-// const SongPlay = () => {
-//   const location = useLocation();
-//   const { song } = location.state || {}; // Get song data passed from SongList
-
-//   return (
-//     <div className="song-play-container">
-//       <h2>{song?.title}</h2>
-//       <img src={song?.imageUrl} alt={song?.title} className="song-image" />
-//       <div className="lyrics">
-//         <h3>Lyrics</h3>
-//         {song?.lyrics.map((line, index) => (
-//           <p key={index} className={index === song?.currentLyricIndex ? 'current-lyric' : ''}>
-//             {line}
-//           </p>
-//         ))}
-//       </div>
-//       {/* Add audio player or any other player-related features */}
-//     </div>
-//   );
-// };
-
-// export default SongPlay;
 
